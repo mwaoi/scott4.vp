@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scott4VP</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      h1 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #333;
+      }
+      button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      #random-phrase {
+        margin: 0;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WHAT DOES SCOTT HAVE TO OFFER?</h1>
+    <button id="random-phrase-btn">PRESS ME PLEASE</button>
+<h2 id="random-phrase"></h2>
+    <script>
+      const phrases = [
+        'Scott wears socks EVERYDAY.',
+        'Scott will catch a grenade for the President.',
+        'Scott is only afraid of gooey things',
+        'The wind flows in his direction. ',
+        'Scott is Christopher Nolan but at SECA.',
+        'Scott HATES partying and LOVES calculus.',
+        'Scott exceeds our dimension.',
+        'Scott can cross dimensions, including time.',
+        'Scott plays funky tunes.',
+        'Scott runs a 9 something mile…',
+        'Scott brushes his teeth EVERY night.',
+        'Scott has a nice mom.',
+        'Scott almost did a Hospital Flip once.',
+        'Scott predicts the future in his films.',
+        'Scott is well behaved while unattended.',
+        'Scott floats like a butterfly and stings like a bee.',
+        'Scott does NOT A.I. generate his campaign ads.',
+        'Scott is underrated and has not won an oscar yet.',
+        'Scott flew a nuke away from the city.',
+        'Scott plays Hot Cross Buns like a musical prodigy.',
+        'Scott is Unbothered. Moisturized. Happy. In His Lane. Flourishing.',
+        'His grandma can play the clarinet.',
+        'Scott can make killer scrambled eggs.',
+        'Scott flew over the Mediterranean Sea deaf AND blind.',
+        'Scott es una buena persona.',
+        'Scott never misses a flight.',
+        'Scott can sell honey to a bee.',
+        'Scott is faster than a calculator.',
+        'Scott already served his Vice Presidency term in a dream.',
+        'Scott is double-jointed.',
+        'His Cornell notes are Ms. Kelly approved.',
+        'Scott can read palms.',
+        'Scott would give Jack his spot on the floating door.',
+        'Scott has never thrown a gutter ball.',
+        'Scott escaped a reality television show dome.',
+        'Scott can manipulate the Matrix.',
+        'Scott only makes hole in ones.',
+        'Scott has his footprint on the moon.',
+        'Scott speaks to the ocean through a clam.',
+        'Scott asks for her parents permission before taking her to prom.',
+      ];
+
+      document.getElementById('random-phrase-btn').addEventListener('click', function () {
+        const randomPhraseIndex = Math.floor(Math.random() * phrases.length);
+        const randomPhrase = phrases[randomPhraseIndex];
+
+        document.getElementById('random-phrase').innerText = randomPhrase;
+      });
+    </script>
+  </body>
+</html>
